@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Woody</title>
+  <subtitle>Life is a Journey</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://bigscorpions.github.io/"/>
+  <updated>2016-06-18T04:52:05.000Z</updated>
+  <id>http://bigscorpions.github.io/</id>
+  
+  <author>
+    <name>Woody</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>闭包</title>
+    <link href="http://bigscorpions.github.io/2016/06/18/closure/"/>
+    <id>http://bigscorpions.github.io/2016/06/18/closure/</id>
+    <published>2016-06-18T04:50:50.000Z</published>
+    <updated>2016-06-18T04:52:05.000Z</updated>
+    
+    <content type="html">&lt;p&gt;在很多支持函数式语言编程特性的语言中出现了&lt;a href=&quot;https://en.wikipedia.org/wiki/Closure_%28computer_programming%29&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;闭包&lt;/a&gt;这个概念。其实这个概念也是从函数式语言中来的，从scheme语言引入实现闭包，解决了lisp动态作用于（dynamic scope)之后，很多函数式语言都引入了类似的特性。&lt;br&gt;在函数作为first-class and hight-order class时,多数都对闭包做了实现,比如python,ruby,c#等。java最新的版本1.8似乎也支持了。c++ 11也开始支持了闭包。&lt;/p&gt;
+&lt;p&gt;对于闭包的理解，我觉得Common Lisp中的解释还是比较准确和易于理解的，直接引用过来：&lt;/p&gt;
+&lt;h2 id=&quot;闭包-Closures&quot;&gt;&lt;a href=&quot;#闭包-Closures&quot; class=&quot;headerlink&quot; title=&quot;闭包 (Closures)&quot;&gt;&lt;/a&gt;闭包 (Closures)&lt;/h2&gt;&lt;p&gt;函数可以如表达式的值，或是其它对象那样被返回。以下是接受一个实参，并依其类型返回特定的结合函数：&lt;br&gt;&lt;figure class=&quot;highlight scheme&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; combiner (&lt;span class=&quot;name&quot;&gt;x&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;typecase&lt;/span&gt; x&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;number&lt;/span&gt; #&lt;span class=&quot;symbol&quot;&gt;&#39;+&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;list&lt;/span&gt;&lt;/span&gt; #&lt;span class=&quot;symbol&quot;&gt;&#39;append&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;t&lt;/span&gt; #&lt;span class=&quot;symbol&quot;&gt;&#39;list&lt;/span&gt;)))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在这之上，我们可以创建一个通用的结合函数:&lt;br&gt;&lt;figure class=&quot;highlight scheme&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; combine (&lt;span class=&quot;name&quot;&gt;&amp;amp;rest&lt;/span&gt; args)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;apply&lt;/span&gt;&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;combiner&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;car&lt;/span&gt;&lt;/span&gt; args))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        args))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;它接受任何类型的参数，并以适合它们类型的方式结合。（为了简化这个例子，我们假定所有的实参，都有着一样的类型。）&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;combine&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;combine&lt;/span&gt; &#39;(a b) &#39;(c d))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;A&lt;/span&gt; B C D)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;词法变量（lexical variables）只在被定义的上下文内有效。伴随这个限制而来的是，只要那个上下文还有在使用，它们就保证会是有效的。如果函数在词法变量的作用域里被定义时，函数仍可引用到那个变量，即便函数被作为一个值返回了，返回至词法变量被创建的上下文之外。下面我们创建了一个把实参加上 3 的函数：&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; fn (&lt;span class=&quot;name&quot;&gt;let&lt;/span&gt; ((&lt;span class=&quot;name&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            #&#39;(lambda (x) (+ x i))))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#&amp;lt;Interpreted-Function C0A51E&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;funcall&lt;/span&gt; fn &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;当函数引用到外部定义的变量时，这外部定义的变量称为自由变量（free variable）。函数引用到自由的词法变量时，称之为闭包（closure）。 [2] 只要函数还存在，变量就必须一起存在。闭包结合了函数与环境（environment）；无论何时，当一个函数引用到周围词法环境的某个东西时，闭包就被隐式地创建出来了。这悄悄地发生在像是下面这个函数，是一样的概念:&lt;br&gt;&lt;figure class=&quot;highlight clojure&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; add-to-list (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;num&lt;/span&gt;&lt;/span&gt; lst)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;mapcar&lt;/span&gt; #&#39;(&lt;span class=&quot;name&quot;&gt;lambda&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;x&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;+&lt;/span&gt;&lt;/span&gt; x num))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          lst))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这函数接受一个数字及列表，并返回一个列表，列表元素是元素与传入数字的和。在 lambda 表达式里的变量 num 是自由的，所以像是这样的情况，我们传递了一个闭包给 mapcar 。&lt;br&gt;一个更显着的例子会是函数在被调用时，每次都返回不同的闭包。下面这个函数返回一个加法器（adder）:&lt;br&gt;&lt;figure class=&quot;highlight clojure&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; make-adder (&lt;span class=&quot;name&quot;&gt;n&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #&#39;(&lt;span class=&quot;name&quot;&gt;lambda&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;x&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;+&lt;/span&gt;&lt;/span&gt; x n)))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;它接受一个数字，并返回一个将该数字与其参数相加的闭包（函数）。&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; add3 (&lt;span class=&quot;name&quot;&gt;make-adder&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#&amp;lt;Interpreted-Function COEBF6&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;funcall&lt;/span&gt; add3 &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; add27 (&lt;span class=&quot;name&quot;&gt;make-adder&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;27&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#&amp;lt;Interpreted-Function C0EE4E&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;funcall&lt;/span&gt; add27 &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;29&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;我们可以产生共享变量的数个闭包。下面我们定义共享一个计数器的两个函数:&lt;br&gt;&lt;figure class=&quot;highlight clojure&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;let&lt;/span&gt;&lt;/span&gt; ((&lt;span class=&quot;name&quot;&gt;counter&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; reset ()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; counter &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; stamp ()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; counter (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;+&lt;/span&gt;&lt;/span&gt; counter &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;))))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这样的一对函数或许可以用来创建时间戳章（time-stamps）。每次我们调用 stamp 时，我们获得一个比之前高的数字，而调用 reset 我们可以将计数器归零:&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;list&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;stamp&lt;/span&gt;) (&lt;span class=&quot;name&quot;&gt;stamp&lt;/span&gt;) (&lt;span class=&quot;name&quot;&gt;reset&lt;/span&gt;) (&lt;span class=&quot;name&quot;&gt;stamp&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;你可以使用全局计数器来做到同样的事情，但这样子使用计数器，可以保护计数器被非预期的引用。Common Lisp 有一个内置的函数 complement 函数，接受一个谓词，并返回谓词的补数（complement）。比如：&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;mapcar&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;complement&lt;/span&gt; #&#39;oddp)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &#39;(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;NIL&lt;/span&gt; T NIL T NIL T)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;有了闭包以后，很容易就可以写出这样的函数：&lt;br&gt;&lt;figure class=&quot;highlight clojure&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; our-complement (&lt;span class=&quot;name&quot;&gt;f&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #&#39;(&lt;span class=&quot;name&quot;&gt;lambda&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;&amp;amp;rest&lt;/span&gt; args)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;not&lt;/span&gt;&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;apply&lt;/span&gt;&lt;/span&gt; f args))))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在很多支持函数式语言编程特性的语言中出现了&lt;a href=&quot;https://en.wikipedia.org/wiki/Closure_%28computer_programming%29&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;闭包&lt;/a&gt;这个概念
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://bigscorpions.github.io/categories/Tech/"/>
+    
+    
+      <category term="closure" scheme="http://bigscorpions.github.io/tags/closure/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>任务管理工具推荐</title>
+    <link href="http://bigscorpions.github.io/2016/06/18/task-manager-system/"/>
+    <id>http://bigscorpions.github.io/2016/06/18/task-manager-system/</id>
+    <published>2016-06-18T04:45:38.000Z</published>
+    <updated>2016-06-18T04:49:31.000Z</updated>
+    
+    <content type="html">&lt;p&gt;对于需要任务管理的人来说，笔记本已经无法满足我们的现代化工作模式的需要了。我们需要记录个人的工作事项，日程安排，进度追踪，小组讨论，文档共享，任务指派。我们甚至可能还需要项目进度的统计和报表数据。现在的任务管理工具或系统很多，多到让你不知如何选择，随便google一下，会有很多‘最好用的’和’前十个’之类的答案。但是你还是得自己试用一下，选择最适合你或者你的团队和公司所需要的那款。&lt;/p&gt;
+&lt;p&gt;我查询了一些答案，试用了一些系统和工具，可以说特点各不相同，但给我的感觉是有很多好的工具不分伯仲，都可以满足你的大部分需求，可能需要根据你自己的品味来选择。但这些真的无关紧要，能帮助你提升你的工作效率才是最重要的。以下是我觉得比较好用的几个系统或工具:&lt;/p&gt;
+&lt;h2 id=&quot;免费-但支持收费购买更多的服务&quot;&gt;&lt;a href=&quot;#免费-但支持收费购买更多的服务&quot; class=&quot;headerlink&quot; title=&quot;免费(但支持收费购买更多的服务)&quot;&gt;&lt;/a&gt;免费(但支持收费购买更多的服务)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Todoist: 跟它的名字一样，这是一个很适合个人事项安排的软件。简单易用，但是能满足基本需求。如果你觉得手机或者电脑自带的‘日程表’不够用，又不想用一个很复杂的系统管理你的日常工作安排，这款软件会很适合你。Todoist支持Web、手机和桌面应用，基本涵盖你的工作环境了吧。我用了这款软件差不多一年了，后来甚至购买了收费版本，主要是管理个人的短期的事项。&lt;/li&gt;
+&lt;li&gt;Asana: 个人或团队的任务管理系统。适合需要对项目进行任务追踪管理、团队沟通、任务指派，支持上传文档。我最喜欢用的任务管理工具，虽然不是我用的第一个任务管理系统。界面干净，侧重点明确，我最喜欢的一点是，它支持不断的额增加子任务（没测试最深的层级）。当你遇到一个复杂的任务，需要分部完成，建立子任务就非常必要，因为任务比简单的描述所拥有的属性更多，你可以关闭一个任务，添加任务描述和评论等，但简单的文字描述的todolist显然是没有这种功能的。免费版本支持15个团队成员，不支持任务优先级设置。Asana支持Web和手机。我基本上用它来管理我的个人或工作的一些项目。&lt;/li&gt;
+&lt;li&gt;Trello: Trello是我试用的第一个任务管理系统，也是因为界面看上去比较整洁，另外觉得它的卡片式的界面风格比较吸引人。它采用卡片管理项目或者任务，支持添加Todolist，评论，上传文档，建立子任务。Trello支持Web和手机，有免费的版本和收费的版本。我现在基本转到Asana上了，但说不定你喜欢，很多人对它的评价也不错。&lt;/li&gt;
+&lt;li&gt;Stanteam: Stanteam也是一个功能全的任务管理软件，有免费和收费版。但是我基本上试用了一下就没在使用了，感觉它的界面不是很直观，不够整洁。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;收费&quot;&gt;&lt;a href=&quot;#收费&quot; class=&quot;headerlink&quot; title=&quot;收费&quot;&gt;&lt;/a&gt;收费&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Atlanssian: 收费的任务管理系统就不得不提Atlanssian了。这家澳大利亚的公司开发了一系列比较好用的系统，比如Jira和Conflunce.从项目管理、bug管理、需求管理等。功能很强大，从它的客户你就能知道这一点。非常适合企业应用。&lt;/li&gt;
+&lt;li&gt;Kanban: 也是不错的任务管理系统，网上评价不错，但本人没试用过，不做过多评论了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Redmine是一个开源的bug管理系统，Ruby开发，支持很多插件，可以基于它搭建和开发适合企业的任务管理系统。&lt;/li&gt;
+&lt;li&gt;Slack: 是的，没错，这个团队协作沟通的软件，有人用它来做团队的任务管理。如果你IRC，对这个应该会比较习惯的。我其实很习惯他的界面和功能，但是我没有团队，所以，基本试用过就没怎么用了，除了跟一些建立Slack的Community聊天的时候用。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对于需要任务管理的人来说，笔记本已经无法满足我们的现代化工作模式的需要了。我们需要记录个人的工作事项，日程安排，进度追踪，小组讨论，文档共享，任务指派。我们甚至可能还需要项目进度的统计和报表数据。现在的任务管理工具或系统很多，多到让你不知如何选择，随便google一下，会有
+    
+    </summary>
+    
+      <category term="Productivity" scheme="http://bigscorpions.github.io/categories/Productivity/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>osx分区合并已删除的分区的方法</title>
+    <link href="http://bigscorpions.github.io/2016/06/18/Install-arch-on-macbook-pro/"/>
+    <id>http://bigscorpions.github.io/2016/06/18/Install-arch-on-macbook-pro/</id>
+    <published>2016-06-18T04:40:27.000Z</published>
+    <updated>2016-06-18T04:45:01.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Macbook pro安装了除了osx系统外，又安装了一个archlinux 系统。各占249G的分区。后osx的分区空间不足了，开始需要压缩archlinux的分区给osx. 但是跟osx相邻的分区为arch的主分区，不能压缩了。这样除了删掉arch的分区，没有办法。在osx里用disk utility删除arch分区，但是发现仍然无法于osx分区合并。可能是不应该用disk utility删除arch分区。最后解决方法不是很快速，但好在保证了原osx系统的完整性。&lt;br&gt;解决方法如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;利用Time Machine备份整个OS X系统.&lt;/li&gt;
+&lt;li&gt;重启电脑，按&lt;code&gt;command+r&lt;/code&gt;，进入OS X recover 系统，进入后利用Disk Utility 删除原osx分区。&lt;/li&gt;
+&lt;li&gt;Restore from Time Machine Backup. (第一次恢复，中间出错，重启后重新恢复，成功完成了恢复）.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;恢复后，osx系统基本还算完整，初步看，文件和应用都没有问题。当然，archlinux无法保住了，因为当时的分区不是很合理，应该把非arch的主分区跟osx分区相邻，这样就可以通过压缩该分区释放空间给osx.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Macbook pro安装了除了osx系统外，又安装了一个archlinux 系统。各占249G的分区。后osx的分区空间不足了，开始需要压缩archlinux的分区给osx. 但是跟osx相邻的分区为arch的主分区，不能压缩了。这样除了删掉arch的分区，没有办法。在o
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://bigscorpions.github.io/categories/Tech/"/>
+    
+    
+      <category term="osx" scheme="http://bigscorpions.github.io/tags/osx/"/>
+    
+  </entry>
+  
+</feed>
