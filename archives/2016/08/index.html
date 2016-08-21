@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Woody">
-    <title>Archives: 2016 - Woody</title>
+    <title>Archives: 2016/8 - Woody</title>
     <meta name="author" content="Woody">
     
     
@@ -18,7 +18,7 @@
     <meta name="description">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Woody">
-<meta property="og:url" content="http://bigscorpions.github.io/archives/2016/index.html">
+<meta property="og:url" content="http://bigscorpions.github.io/archives/2016/08/index.html">
 <meta property="og:site_name" content="Woody">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -402,182 +402,6 @@
                     
                         <p>
                             <a href="/2016/08/21/share-books/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2016/06/18/closure/">
-                            闭包
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-06-18T12:50:50+08:00">
-	
-		    Jun 18, 2016
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/Tech/">Tech</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p>在很多支持函数式语言编程特性的语言中出现了<a href="https://en.wikipedia.org/wiki/Closure_%28computer_programming%29" target="_blank" rel="external">闭包</a>这个概念。其实这个概念也是从函数式语言中来的，从scheme语言引入实现闭包，解决了lisp动态作用于（dynamic scope)之后，很多函数式语言都引入了类似的特性。<br>在函数作为first-class and hight-order class时,多数都对闭包做了实现,比如python,ruby,c#等。java最新的版本1.8似乎也支持了。c++ 11也开始支持了闭包。</p>
-<p>对于闭包的理解，我觉得Common Lisp中的解释还是比较准确和易于理解的，直接引用过来：</p>
-<h2 id="闭包-Closures"><a href="#闭包-Closures" class="headerlink" title="闭包 (Closures)"></a>闭包 (Closures)</h2><p>函数可以如表达式的值，或是其它对象那样被返回。以下是接受一个实参，并依其类型返回特定的结合函数：<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name">defun</span> combiner (<span class="name">x</span>)</span><br><span class="line">  (<span class="name">typecase</span> x</span><br><span class="line">    (<span class="name">number</span> #'+)</span><br><span class="line">    (<span class="name">list</span> #'append)</span><br><span class="line">    (<span class="name">t</span> #'list)))</span><br></pre></td></tr></table></figure><br>在这之上，我们可以创建一个通用的结合函数:<br><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name">defun</span> combine (<span class="name">&amp;rest</span> args)</span><br><span class="line">  (<span class="name"><span class="builtin-name">apply</span></span> (<span class="name">combiner</span> (<span class="name"><span class="builtin-name">car</span></span> args))</span><br><span class="line">        args))</span><br></pre></td></tr></table></figure></p>
-<p>它接受任何类型的参数，并以适合它们类型的方式结合。（为了简化这个例子，我们假定所有的实参，都有着一样的类型。）<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; (<span class="name">combine</span> <span class="number">2</span> <span class="number">3</span>)</span><br><span class="line"><span class="number">5</span></span><br><span class="line">&gt; (<span class="name">combine</span> '(a b) '(c d))</span><br><span class="line">(<span class="name">A</span> B C D)</span><br></pre></td></tr></table></figure></p>
-<p>词法变量（lexical variables）只在被定义的上下文内有效。伴随这个限制而来的是，只要那个上下文还有在使用，它们就保证会是有效的。如果函数在词法变量的作用域里被定义时，函数仍可引用到那个变量，即便函数被作为一个值返回了，返回至词法变量被创建的上下文之外。下面我们创建了一个把实参加上 3 的函数：<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; (<span class="name">setf</span> fn (<span class="name">let</span> ((<span class="name">i</span> <span class="number">3</span>))</span><br><span class="line">            #'(lambda (x) (+ x i))))</span><br><span class="line">#&lt;Interpreted-Function C0A51E&gt;</span><br><span class="line">&gt; (<span class="name">funcall</span> fn <span class="number">2</span>)</span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure></p>
-<p>当函数引用到外部定义的变量时，这外部定义的变量称为自由变量（free variable）。函数引用到自由的词法变量时，称之为闭包（closure）。 [2] 只要函数还存在，变量就必须一起存在。闭包结合了函数与环境（environment）；无论何时，当一个函数引用到周围词法环境的某个东西时，闭包就被隐式地创建出来了。这悄悄地发生在像是下面这个函数，是一样的概念:<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name">defun</span> add-to-list (<span class="name"><span class="builtin-name">num</span></span> lst)</span><br><span class="line">  (<span class="name">mapcar</span> #'(<span class="name">lambda</span> (<span class="name">x</span>)</span><br><span class="line">              (<span class="name"><span class="builtin-name">+</span></span> x num))</span><br><span class="line">          lst))</span><br></pre></td></tr></table></figure></p>
-<p>这函数接受一个数字及列表，并返回一个列表，列表元素是元素与传入数字的和。在 lambda 表达式里的变量 num 是自由的，所以像是这样的情况，我们传递了一个闭包给 mapcar 。<br>一个更显着的例子会是函数在被调用时，每次都返回不同的闭包。下面这个函数返回一个加法器（adder）:<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name">defun</span> make-adder (<span class="name">n</span>)</span><br><span class="line">  #'(<span class="name">lambda</span> (<span class="name">x</span>)</span><br><span class="line">      (<span class="name"><span class="builtin-name">+</span></span> x n)))</span><br></pre></td></tr></table></figure></p>
-<p>它接受一个数字，并返回一个将该数字与其参数相加的闭包（函数）。<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; (<span class="name">setf</span> add3 (<span class="name">make-adder</span> <span class="number">3</span>))</span><br><span class="line">#&lt;Interpreted-Function COEBF6&gt;</span><br><span class="line">&gt; (<span class="name">funcall</span> add3 <span class="number">2</span>)</span><br><span class="line"><span class="number">5</span></span><br><span class="line">&gt; (<span class="name">setf</span> add27 (<span class="name">make-adder</span> <span class="number">27</span>))</span><br><span class="line">#&lt;Interpreted-Function C0EE4E&gt;</span><br><span class="line">&gt; (<span class="name">funcall</span> add27 <span class="number">2</span>)</span><br><span class="line"><span class="number">29</span></span><br></pre></td></tr></table></figure></p>
-<p>我们可以产生共享变量的数个闭包。下面我们定义共享一个计数器的两个函数:<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">let</span></span> ((<span class="name">counter</span> <span class="number">0</span>))</span><br><span class="line">  (<span class="name">defun</span> reset ()</span><br><span class="line">    (<span class="name">setf</span> counter <span class="number">0</span>))</span><br><span class="line">  (<span class="name">defun</span> stamp ()</span><br><span class="line">    (<span class="name">setf</span> counter (<span class="name"><span class="builtin-name">+</span></span> counter <span class="number">1</span>))))</span><br></pre></td></tr></table></figure></p>
-<p>这样的一对函数或许可以用来创建时间戳章（time-stamps）。每次我们调用 stamp 时，我们获得一个比之前高的数字，而调用 reset 我们可以将计数器归零:<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; (<span class="name">list</span> (<span class="name">stamp</span>) (<span class="name">stamp</span>) (<span class="name">reset</span>) (<span class="name">stamp</span>))</span><br><span class="line">(<span class="number">1</span> <span class="number">2</span> <span class="number">0</span> <span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
-<p>你可以使用全局计数器来做到同样的事情，但这样子使用计数器，可以保护计数器被非预期的引用。Common Lisp 有一个内置的函数 complement 函数，接受一个谓词，并返回谓词的补数（complement）。比如：<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; (<span class="name">mapcar</span> (<span class="name">complement</span> #'oddp)</span><br><span class="line">          '(<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span>))</span><br><span class="line">(<span class="name">NIL</span> T NIL T NIL T)</span><br></pre></td></tr></table></figure></p>
-<p>有了闭包以后，很容易就可以写出这样的函数：<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name">defun</span> our-complement (<span class="name">f</span>)</span><br><span class="line">  #'(<span class="name">lambda</span> (<span class="name">&amp;rest</span> args)</span><br><span class="line">      (<span class="name"><span class="builtin-name">not</span></span> (<span class="name"><span class="builtin-name">apply</span></span> f args))))</span><br></pre></td></tr></table></figure></p>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2016/06/18/closure/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2016/06/18/task-manager-system/">
-                            任务管理工具推荐
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-06-18T12:45:38+08:00">
-	
-		    Jun 18, 2016
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/Productivity/">Productivity</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p>对于需要任务管理的人来说，笔记本已经无法满足我们的现代化工作模式的需要了。我们需要记录个人的工作事项，日程安排，进度追踪，小组讨论，文档共享，任务指派。我们甚至可能还需要项目进度的统计和报表数据。现在的任务管理工具或系统很多，多到让你不知如何选择，随便google一下，会有很多‘最好用的’和’前十个’之类的答案。但是你还是得自己试用一下，选择最适合你或者你的团队和公司所需要的那款。</p>
-<p>我查询了一些答案，试用了一些系统和工具，可以说特点各不相同，但给我的感觉是有很多好的工具不分伯仲，都可以满足你的大部分需求，可能需要根据你自己的品味来选择。但这些真的无关紧要，能帮助你提升你的工作效率才是最重要的。以下是我觉得比较好用的几个系统或工具:</p>
-<h2 id="免费-但支持收费购买更多的服务"><a href="#免费-但支持收费购买更多的服务" class="headerlink" title="免费(但支持收费购买更多的服务)"></a>免费(但支持收费购买更多的服务)</h2><ul>
-<li>Todoist: 跟它的名字一样，这是一个很适合个人事项安排的软件。简单易用，但是能满足基本需求。如果你觉得手机或者电脑自带的‘日程表’不够用，又不想用一个很复杂的系统管理你的日常工作安排，这款软件会很适合你。Todoist支持Web、手机和桌面应用，基本涵盖你的工作环境了吧。我用了这款软件差不多一年了，后来甚至购买了收费版本，主要是管理个人的短期的事项。</li>
-<li>Asana: 个人或团队的任务管理系统。适合需要对项目进行任务追踪管理、团队沟通、任务指派，支持上传文档。我最喜欢用的任务管理工具，虽然不是我用的第一个任务管理系统。界面干净，侧重点明确，我最喜欢的一点是，它支持不断的额增加子任务（没测试最深的层级）。当你遇到一个复杂的任务，需要分部完成，建立子任务就非常必要，因为任务比简单的描述所拥有的属性更多，你可以关闭一个任务，添加任务描述和评论等，但简单的文字描述的todolist显然是没有这种功能的。免费版本支持15个团队成员，不支持任务优先级设置。Asana支持Web和手机。我基本上用它来管理我的个人或工作的一些项目。</li>
-<li>Trello: Trello是我试用的第一个任务管理系统，也是因为界面看上去比较整洁，另外觉得它的卡片式的界面风格比较吸引人。它采用卡片管理项目或者任务，支持添加Todolist，评论，上传文档，建立子任务。Trello支持Web和手机，有免费的版本和收费的版本。我现在基本转到Asana上了，但说不定你喜欢，很多人对它的评价也不错。</li>
-<li>Stanteam: Stanteam也是一个功能全的任务管理软件，有免费和收费版。但是我基本上试用了一下就没在使用了，感觉它的界面不是很直观，不够整洁。</li>
-</ul>
-<h2 id="收费"><a href="#收费" class="headerlink" title="收费"></a>收费</h2><ul>
-<li>Atlanssian: 收费的任务管理系统就不得不提Atlanssian了。这家澳大利亚的公司开发了一系列比较好用的系统，比如Jira和Conflunce.从项目管理、bug管理、需求管理等。功能很强大，从它的客户你就能知道这一点。非常适合企业应用。</li>
-<li>Kanban: 也是不错的任务管理系统，网上评价不错，但本人没试用过，不做过多评论了。</li>
-</ul>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
-<li>Redmine是一个开源的bug管理系统，Ruby开发，支持很多插件，可以基于它搭建和开发适合企业的任务管理系统。</li>
-<li>Slack: 是的，没错，这个团队协作沟通的软件，有人用它来做团队的任务管理。如果你IRC，对这个应该会比较习惯的。我其实很习惯他的界面和功能，但是我没有团队，所以，基本试用过就没怎么用了，除了跟一些建立Slack的Community聊天的时候用。</li>
-</ul>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2016/06/18/task-manager-system/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2016/06/18/Install-arch-on-macbook-pro/">
-                            osx分区合并已删除的分区的方法
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-06-18T12:40:27+08:00">
-	
-		    Jun 18, 2016
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/Tech/">Tech</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p>Macbook pro安装了除了osx系统外，又安装了一个archlinux 系统。各占249G的分区。后osx的分区空间不足了，开始需要压缩archlinux的分区给osx. 但是跟osx相邻的分区为arch的主分区，不能压缩了。这样除了删掉arch的分区，没有办法。在osx里用disk utility删除arch分区，但是发现仍然无法于osx分区合并。可能是不应该用disk utility删除arch分区。最后解决方法不是很快速，但好在保证了原osx系统的完整性。<br>解决方法如下:</p>
-<ul>
-<li>利用Time Machine备份整个OS X系统.</li>
-<li>重启电脑，按<code>command+r</code>，进入OS X recover 系统，进入后利用Disk Utility 删除原osx分区。</li>
-<li>Restore from Time Machine Backup. (第一次恢复，中间出错，重启后重新恢复，成功完成了恢复）.</li>
-</ul>
-<p>恢复后，osx系统基本还算完整，初步看，文件和应用都没有问题。当然，archlinux无法保住了，因为当时的分区不是很合理，应该把非arch的主分区跟osx分区相邻，这样就可以通过压缩该分区释放空间给osx.</p>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2016/06/18/Install-arch-on-macbook-pro/#post-footer" class="postShorten-excerpt_link link">
                                 Comment and share
                             </a>
                         </p>
