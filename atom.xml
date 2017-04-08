@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bigscorpions.github.io/"/>
-  <updated>2016-11-09T09:29:10.000Z</updated>
+  <updated>2017-04-08T07:54:38.000Z</updated>
   <id>http://bigscorpions.github.io/</id>
   
   <author>
@@ -16,14 +16,107 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Zoom 使用简介</title>
+    <link href="http://bigscorpions.github.io/2017/04/08/zoom-guid/"/>
+    <id>http://bigscorpions.github.io/2017/04/08/zoom-guid/</id>
+    <published>2017-04-08T02:18:25.000Z</published>
+    <updated>2017-04-08T07:54:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Zoom 是一款很不错的在线视频会议系统。总体而言，它虽然是后起之秀，但是大有赶超前辈的意思。如果你知道Zoom的核心开发团队出自WebEx，估计你就不再会惊讶它的优秀了。</p>
+<p>本文只简单介绍一下Zoom的免费视频会议(Basic Personal Meeting)桌面客户端使用。我主要介绍Zoom.us官方网站，官网提供会议免费使用的版本，国内的代理商(zoom.cn)没有免费版本，只能免费试用7~14天。实际测试发现，其官网的视频会议速度也还不错，比较稳定。</p>
+<p>支持手机App.</p>
+<h2 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h2><p>建议使用Chrome、Firefox、Safari浏览器。实际使用发现，Edge浏览器有问题，也不建议使用IE(未测试)。使用Edge在网页上开启会议，会出现界面空白，无法下载客户端软件，</p>
+<h2 id="官网介绍（zoom-us"><a href="#官网介绍（zoom-us" class="headerlink" title="官网介绍（zoom.us)"></a>官网介绍（zoom.us)</h2><p>打开官网，如果要发起会议，需要注册一个账号，加入其他人的会议则不需要注册。<br>登录账号后，在网页顶部右侧有三个导航菜单链接：Schedule a Meeting, Join a Meeting, Host a Meeting.<br>你可以计划安排一个会议，比如下周的某一天几点开始会议，或者加入别人的会议，也可以主持自己的会议(Host a Meeting).<br><div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/zoom-nav.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/zoom-nav.png" alt=""></a></div><div style="clear:both;"></div><br>如果你第一次使用，没有安装Zoom桌面客户端，页面会提示并自动下载Zoom 客户端。<br>当你安装了Zoom客户端之后，这几个功能，都可以在客户端上完成。</p>
+<h2 id="下载安装桌面客户端"><a href="#下载安装桌面客户端" class="headerlink" title="下载安装桌面客户端"></a>下载安装桌面客户端</h2><p>视频会议最好还是使用客户端进行，最好不要用浏览器（浏览器需要安装插件，未测试）<br>你也可以直接在官网上自己手动下载客户端并安装。安装后使用客户端而非浏览器操作。<br>网址：zoom.us/meetings<br><div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/zoom-download.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/zoom-download.png" alt=""></a></div><div style="clear:both;"></div></p>
+<h2 id="桌面客户端"><a href="#桌面客户端" class="headerlink" title="桌面客户端"></a>桌面客户端</h2><p>登录客户单App主界面如下，可以计划、加入和建立（主持Host)会议，共享（屏幕、白板）。在Settings中可设置常规选项、音频、视频、录制等。<br><div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/zoom-settings.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/zoom-settings.png" alt=""></a></div><div style="clear:both;"></div></p>
+<p>进入会议后界面主要有菜单、工具栏、视频或共享主窗口三部分。<br>菜单栏中可进行设置、会议操作，工具栏功能与菜单栏基本相同。<br><div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/meeting.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/meeting.png" alt=""></a></div><div style="clear:both;"></div></p>
+<h2 id="发起会议"><a href="#发起会议" class="headerlink" title="发起会议"></a>发起会议</h2><p>客户端主界面(Home)</p>
+<ul>
+<li>Start with/without Video - 立即开始会议。</li>
+<li>Schedule - 计划会议</li>
+<li>Share screen - 共享屏幕</li>
+</ul>
+<h2 id="加入会议"><a href="#加入会议" class="headerlink" title="加入会议"></a>加入会议</h2><p>两种方式都可以</p>
+<ol>
+<li>客户端主界面(Home)，点击Join，输入Meeting Id.</li>
+<li>点击发起会议的邀请链接，例如<a href="https://zoom.us/j/742625326，最后的数字即Meeting" target="_blank" rel="external">https://zoom.us/j/742625326，最后的数字即Meeting</a> Id. 点击链接后，一般系统会用浏览器打开，然后页面提示下载安装或启动已有的客户端程序，点击允许(Allow)继续。这样就无需注册自动加入会议了。<strong>注意</strong> ，前面提到过不要用edge或IE。点击链接，系统或找默认的浏览器，如果是edge或IE浏览器打开了，而无法下载或启动客户端程序，请复制这个邀请链接到Chrome、Firefox、Safari浏览器中。已安装客户端的，可以采用方法1，输入链接最后的数字（Meeting id)。</li>
+</ol>
+<h2 id="邀请其他人加入会议"><a href="#邀请其他人加入会议" class="headerlink" title="邀请其他人加入会议"></a>邀请其他人加入会议</h2><p>在会议界面底部的工具栏，点击Invite，或者菜单栏Meeting-&gt;Invite，复制邀请链接，或发送到email.<br>也可以直接把Meeting Id发给其他人，Meeting Id在会议界面顶部显示。</p>
+<h2 id="会议主要功能"><a href="#会议主要功能" class="headerlink" title="会议主要功能"></a>会议主要功能</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><ul>
+<li>设置输入输出设备</li>
+<li>静音<div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/audio.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/audio.png" alt=""></a></div><div style="clear:both;"></div>
+<div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/connect-audio.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/connect-audio.png" alt=""></a></div><div style="clear:both;"></div>
+<h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3></li>
+<li>视频设置<div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/video-setting.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/video-setting.png" alt=""></a></div><div style="clear:both;"></div></li>
+<li>切换视图</li>
+<li>锁定视频窗口(Pin Video)<div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/pin-video.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/pin-video.png" alt=""></a></div><div style="clear:both;"></div>
+<h3 id="共享屏幕"><a href="#共享屏幕" class="headerlink" title="共享屏幕"></a>共享屏幕</h3><div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/share-screen.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/share-screen.png" alt=""></a></div><div style="clear:both;"></div></li>
+<li>屏幕</li>
+<li>白板</li>
+<li>平板或手机</li>
+<li>程序（如打开的幻灯片软件）</li>
+</ul>
+<h3 id="设置主持人-Make-Host"><a href="#设置主持人-Make-Host" class="headerlink" title="设置主持人(Make Host)"></a>设置主持人(Make Host)</h3><p>当前主持人，能设置其他人为主持人。会议主持人的控制功能最多，比如主持人可以录制视频。<br>在每个人的视频窗口，点击鼠标，出现More，在下拉菜单中点击Make Host。或者在底部工具栏，单击Manage Participants，在鼠标放在参加者名字上，出现More，在下拉菜单中点击Make Host.<br><div class="figure nocaption" style="width:;"><a class="fancybox" href="/2017/04/08/zoom-guid/make-host.png" title="" data-fancybox-group=""><img class="fig-img" src="/2017/04/08/zoom-guid/make-host.png" alt=""></a></div><div style="clear:both;"></div></p>
+<h3 id="聊天"><a href="#聊天" class="headerlink" title="聊天"></a>聊天</h3><p>点击底部工具栏Chat，打开聊天窗口，可向所有人(Everyone)或者指定人发消息。<br>免费版本不支持发文件。</p>
+<h3 id="录制视频-Record"><a href="#录制视频-Record" class="headerlink" title="录制视频(Record)"></a>录制视频(Record)</h3><p>主持人可以录制视频。点击底部工具栏的Record，开始录制本地视频（服务器录制视频免费版不提供）。停止录制视频后，提示结束会议后自动保存。结束会议后，选择视频保存位置，完成录制。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>举手发言<br>锁定会议(lock room)<br>…</p>
+<h2 id="常见一些问题"><a href="#常见一些问题" class="headerlink" title="常见一些问题"></a>常见一些问题</h2><p>主要问题仍然是IE和Edge浏览器的问题，换成其他浏览器。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Zoom 是一款很不错的在线视频会议系统。总体而言，它虽然是后起之秀，但是大有赶超前辈的意思。如果你知道Zoom的核心开发团队出自WebEx，估计你就不再会惊讶它的优秀了。&lt;/p&gt;
+&lt;p&gt;本文只简单介绍一下Zoom的免费视频会议(Basic Personal Meeting
+    
+    </summary>
+    
+      <category term="tools" scheme="http://bigscorpions.github.io/categories/tools/"/>
+    
+    
+      <category term="Tutorial" scheme="http://bigscorpions.github.io/tags/Tutorial/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mantis_email_config</title>
+    <link href="http://bigscorpions.github.io/2017/03/25/mantis-email-config/"/>
+    <id>http://bigscorpions.github.io/2017/03/25/mantis-email-config/</id>
+    <published>2017-03-25T12:59:50.000Z</published>
+    <updated>2017-03-25T13:40:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文介绍<a href="http://mantisbt.org" target="_blank" rel="external">mantis</a>邮件配置，以实现用户邮件注册、邮件通知等功能。第一次部署mantis就没有配置成功，当时改成管理员添加用户，但是非常不方便。只加了一个test用户进行提交问题，这样就不知道具体是谁提交的了。最近又在另外一台服务器上部署mantis，而且这次软件使用人员比第一次多，所以还是用户自行注册比较好，也知道哪个用户提交的问题，同时，管理员、开发人员和用户都可以接收关于bug状态的邮件通知，这才能更好的发挥一个issue tracking system的功能。</p>
+<p>我选择的是最新版，2.0.1。mantis安装这里不做介绍，只介绍邮件配置，其他像匿名登录配置和一些自定义配置由于比较简单，这里不提及。</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>以163邮箱为例，并经过验证。其他邮箱未测试。</p>
+<h3 id="config-inc-php"><a href="#config-inc-php" class="headerlink" title="config_inc.php"></a>config_inc.php</h3><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># ----- EMAIL CONFIGURATION -----</div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_administrator_email = 'user@163.com';</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_webmaster_email  = 'user@163.com';</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_from_email   = 'user@163.com';</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_from_name   = '金思路软件 Bug 跟踪管理系统';</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_return_path_email = 'user@163.com';</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_phpMailer_method  = PHPMAILER_METHOD_SMTP;</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_use_phpMailer = ON; # 使用 PHPMailer 发送邮件</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_smtp_host   = 'smtp.163.com';</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_smtp_username = 'user@163.com';</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_smtp_password = '***';</span></div><div class="line"><span class="meta"><span class="meta-keyword">$g</span>_smtp_port = 25;</span></div></pre></td></tr></table></figure>
+<p>这里需要注意的一点是，你的163邮箱账号设置里，需要开启smtp功能，这里的<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">### php.ini</div></pre></td></tr></table></figure></p>
+<p>; For Win32 only.<br>; <a href="http://php.net/smtp" target="_blank" rel="external">http://php.net/smtp</a><br>SMTP = smtp.163.com<br>; <a href="http://php.net/smtp-port" target="_blank" rel="external">http://php.net/smtp-port</a><br>smtp_port = 25<br>```</p>
+<p>你能看到smtp_port = 25在config_inc.php和php.ini中都设置了，我没有测试只在一个地方设置的情况。</p>
+<h3 id="httpd-conf"><a href="#httpd-conf" class="headerlink" title="httpd.conf"></a>httpd.conf</h3><p>最后在apache的httpd.conf文件中，找到listen <portnumber> 这里，换成服务器的ip:port，这样发给用户注册邮件的链接，就不是localhost了。</portnumber></p>
+<p>你可以自己通过php脚本测试邮件配置，或者通过打印日志的方式，不过我从没写过php代码，也不喜欢php。我差一点因为配置不成功选择python的issue tracking system了，那样我可以通过代码测试出什么问题了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文介绍&lt;a href=&quot;http://mantisbt.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mantis&lt;/a&gt;邮件配置，以实现用户邮件注册、邮件通知等功能。第一次部署mantis就没有配置成功，当时改成管理员添加用户，但是非常不方便。
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://bigscorpions.github.io/categories/Tech/"/>
+    
+    
+      <category term="issue tracker" scheme="http://bigscorpions.github.io/tags/issue-tracker/"/>
+    
+  </entry>
+  
+  <entry>
     <title>BIM Logo</title>
     <link href="http://bigscorpions.github.io/2016/11/09/bimlogo/"/>
     <id>http://bigscorpions.github.io/2016/11/09/bimlogo/</id>
     <published>2016-11-09T09:10:36.000Z</published>
-    <updated>2016-11-09T09:29:10.000Z</updated>
+    <updated>2016-12-25T14:26:34.000Z</updated>
     
-    <content type="html">&lt;div class=&quot;figure nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/11/09/bimlogo/bim-logo.png&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/11/09/bimlogo/bim-logo.png&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-</content>
+    <content type="html"><![CDATA[<div class="figure nocaption" style="width:300px;"><a class="fancybox" href="/2016/11/09/bimlogo/bim-logo.png" title="" data-fancybox-group=""><img class="fig-img" src="/2016/11/09/bimlogo/bim-logo.png" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+]]></content>
     
     <summary type="html">
     
@@ -32,7 +125,7 @@
     </summary>
     
     
-      <category term="volunteer" scheme="http://bigscorpions.github.io/tags/volunteer/"/>
+      <category term="logo" scheme="http://bigscorpions.github.io/tags/logo/"/>
     
   </entry>
   
@@ -43,14 +136,14 @@
     <published>2016-11-03T08:10:36.000Z</published>
     <updated>2016-11-08T12:56:38.000Z</updated>
     
-    <content type="html">&lt;p&gt;我记不清自己从什么时候开始关注志愿者这个领域，好像一开始是因为旅行知道“义工”这个词，通过别人写的游记和博客，了解了一下国内外的义工这个行业。不久就联系到志愿者这个跟义工近义词的领域，比如尼泊尔的几个支教和关爱儿童的组织。慢慢在论坛上就发现NGO这个缩写看上去完全不知道什么意思的词。那时自己的兴趣主要还是旅行，对志愿者和义工都傻傻分不清，没想过参加志愿者，对他们完全不了解，只是内心有点尊敬的意思。&lt;/p&gt;
-&lt;p&gt;但后来，对公司按部就班的工作越来越厌倦了，我甚至觉得，像我这样的上班族其实就是“Loser”，所以想着辞职旅行玩一两年，或者。。。这时关注NGO这个词开始出现在我脑海中成为第二个选择。于是我开始认真的去了解NGO组织，上几个比较有名气的网站和论坛，看看别人写的经历，慢慢也开始物色哪些适合自己的组织。但我并没有实际行动，仍然是上班，工作。一般假期，不想呆在家里，出去旅行嫌人多，就去徒步。但我并不是狂热的徒步爱好者，也说不上是真正的驴友。我第一次参加徒步，是因为自己健身锻炼了半年时间，想去徒步看看自己体能身体到底怎么样。后来参加了几次，又觉得很多徒步团队，人员体能和户外经验参差不齐，更有很多人只是从城市移到了户外而已，没遇到真正的驴，只想一个人走。徒步是有点上瘾的，一到长假或者年假，我就想去爬山了，景色美，人少，驴友本身也是相对有点志同道合的人。但慢慢徒步给我的感觉，有点逃避的意思，每次逃离城市，在山里短暂的忘记一切，然后又回到现实，每次都要适应很长的一段时间。这时我想参加NGO组织了，我想参与一种不那么功利的组织的工作，作一点有意义的事，刷一下自己的存在感，反正自己有点迷茫，不如在迷茫中去作点事。而且虽然之前我从没参加过这样的组织和活动，但是我本人认为，帮助别人，会给自己带来快乐和满足。&lt;/p&gt;
-&lt;p&gt;关注NGO组织有近半年多的时间，看了很多招聘，要求还很高，学历、英语、工作经验，想象自己倒是有点屌丝。很多工作的周期都很长，少则个把月，多则一两年，不辞职还真没办法参加。也有些组织干脆需要你之前有过类似经历，对我这样没参加过的人来说，有点像“鸡生蛋、蛋生鸡”的悖论。我甚至已经准备好中英文简历，准备随时投递。&lt;/p&gt;
-&lt;p&gt;持续的关注终于等来一次机会，在国庆假期最后一天在NGO论坛上发现一个公益助学组织招募短期志愿者，一个星期，主要是助学走访。刚好我国庆后准备休假，机会难得，我觉得这个活动刚好适合我这种零经验的参加，想都没想就立刻提交了申请。为了保险起见，我还是到它的官网又提交了一次申请。&lt;/p&gt;
-&lt;p&gt;就这样终于参加了一次志愿者的活动，往返一共差不多6天左右，实际走访差不多5天，时间比较紧凑，也比较短，但是总算体验和经历了什么是志愿者。志愿者一般都是费用自理，食宿、路费等，义工一般会有一点补助和工资。比如这个组织主要的助学还包括支教，支教老师就是有工资的。&lt;/p&gt;
-&lt;p&gt;经历了这一次的志愿者活动，感触较深的是自己没有以往假期去旅行和爬山那种游离正常生活和工作再回归的过程，而是一直活在当下，人生充满动力。难道真的是正能量带来的？从我开始参加，到途中工作，最后回来上班，我像是没有休假，但是并没有感觉很累，精神上反而很充实。在助学走访过程中，见到很多支教老师，大多数都比较年轻，在那种物资匮乏的地区教书，心里由衷的敬佩。很多参加的志愿者其实有支教的想法的，但我目前还很难接受那种生活，我散漫惯了，很难静下心来坚持平淡的生活、平淡的工作。有一个支教女老师差不多四五十岁了，长春的，有一个给自己班的孩子买的冬季穿的羽绒服（她的班级只有七个孩子），这些都给我较深的印象。还有那里的孩子，从活泼的小学生，到青涩的初中生和高中生，有点回到自己的学生时代的感觉。有几个受资助的学生，已经考到了市里的重点高中，那两个高中学校建设都很好，很漂亮，真心为他们高兴。他们上学，尤其是小学，还是很辛苦的，离学校远的要走一两个小时，我还是难以想象他们是怎样一步步努力坚持下来走到今天的。通过走访助学家庭，对偏僻山村的贫穷状况有了亲身的体验。就像我在昆明坐顺风车跟司机攀谈那样，他有不错的工作，家庭条件很好，他说他有时跟孩子讲农村有些地方孩子吃不饱穿不暖，他儿子是不信的。我走访的大多数家庭没有到吃不上饭、穿不上衣服的地步，但衣服鞋子都很破旧，家里平时多以洋芋为主食，想必一般人还是想象不到的。这里我不过多谈贫困的问题了，政府也确实作了不少工作。这个公益组织主要是助学，不是扶贫。但是孩子，还是需要我们给他们一个起码的教育平台。也许他们高中或大学毕业了，仍然不见得有多光明的未来，但是起码能提高大多数人的人文、科学知识。这里我不想提各种高大上的说法了，能作一点，就作一点，能影响一点，就影响一点。&lt;/p&gt;
-&lt;p&gt;祝福那里的支教老师和孩子们！  &lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>我记不清自己从什么时候开始关注志愿者这个领域，好像一开始是因为旅行知道“义工”这个词，通过别人写的游记和博客，了解了一下国内外的义工这个行业。不久就联系到志愿者这个跟义工近义词的领域，比如尼泊尔的几个支教和关爱儿童的组织。慢慢在论坛上就发现NGO这个缩写看上去完全不知道什么意思的词。那时自己的兴趣主要还是旅行，对志愿者和义工都傻傻分不清，没想过参加志愿者，对他们完全不了解，只是内心有点尊敬的意思。</p>
+<p>但后来，对公司按部就班的工作越来越厌倦了，我甚至觉得，像我这样的上班族其实就是“Loser”，所以想着辞职旅行玩一两年，或者。。。这时关注NGO这个词开始出现在我脑海中成为第二个选择。于是我开始认真的去了解NGO组织，上几个比较有名气的网站和论坛，看看别人写的经历，慢慢也开始物色哪些适合自己的组织。但我并没有实际行动，仍然是上班，工作。一般假期，不想呆在家里，出去旅行嫌人多，就去徒步。但我并不是狂热的徒步爱好者，也说不上是真正的驴友。我第一次参加徒步，是因为自己健身锻炼了半年时间，想去徒步看看自己体能身体到底怎么样。后来参加了几次，又觉得很多徒步团队，人员体能和户外经验参差不齐，更有很多人只是从城市移到了户外而已，没遇到真正的驴，只想一个人走。徒步是有点上瘾的，一到长假或者年假，我就想去爬山了，景色美，人少，驴友本身也是相对有点志同道合的人。但慢慢徒步给我的感觉，有点逃避的意思，每次逃离城市，在山里短暂的忘记一切，然后又回到现实，每次都要适应很长的一段时间。这时我想参加NGO组织了，我想参与一种不那么功利的组织的工作，作一点有意义的事，刷一下自己的存在感，反正自己有点迷茫，不如在迷茫中去作点事。而且虽然之前我从没参加过这样的组织和活动，但是我本人认为，帮助别人，会给自己带来快乐和满足。</p>
+<p>关注NGO组织有近半年多的时间，看了很多招聘，要求还很高，学历、英语、工作经验，想象自己倒是有点屌丝。很多工作的周期都很长，少则个把月，多则一两年，不辞职还真没办法参加。也有些组织干脆需要你之前有过类似经历，对我这样没参加过的人来说，有点像“鸡生蛋、蛋生鸡”的悖论。我甚至已经准备好中英文简历，准备随时投递。</p>
+<p>持续的关注终于等来一次机会，在国庆假期最后一天在NGO论坛上发现一个公益助学组织招募短期志愿者，一个星期，主要是助学走访。刚好我国庆后准备休假，机会难得，我觉得这个活动刚好适合我这种零经验的参加，想都没想就立刻提交了申请。为了保险起见，我还是到它的官网又提交了一次申请。</p>
+<p>就这样终于参加了一次志愿者的活动，往返一共差不多6天左右，实际走访差不多5天，时间比较紧凑，也比较短，但是总算体验和经历了什么是志愿者。志愿者一般都是费用自理，食宿、路费等，义工一般会有一点补助和工资。比如这个组织主要的助学还包括支教，支教老师就是有工资的。</p>
+<p>经历了这一次的志愿者活动，感触较深的是自己没有以往假期去旅行和爬山那种游离正常生活和工作再回归的过程，而是一直活在当下，人生充满动力。难道真的是正能量带来的？从我开始参加，到途中工作，最后回来上班，我像是没有休假，但是并没有感觉很累，精神上反而很充实。在助学走访过程中，见到很多支教老师，大多数都比较年轻，在那种物资匮乏的地区教书，心里由衷的敬佩。很多参加的志愿者其实有支教的想法的，但我目前还很难接受那种生活，我散漫惯了，很难静下心来坚持平淡的生活、平淡的工作。有一个支教女老师差不多四五十岁了，长春的，有一个给自己班的孩子买的冬季穿的羽绒服（她的班级只有七个孩子），这些都给我较深的印象。还有那里的孩子，从活泼的小学生，到青涩的初中生和高中生，有点回到自己的学生时代的感觉。有几个受资助的学生，已经考到了市里的重点高中，那两个高中学校建设都很好，很漂亮，真心为他们高兴。他们上学，尤其是小学，还是很辛苦的，离学校远的要走一两个小时，我还是难以想象他们是怎样一步步努力坚持下来走到今天的。通过走访助学家庭，对偏僻山村的贫穷状况有了亲身的体验。就像我在昆明坐顺风车跟司机攀谈那样，他有不错的工作，家庭条件很好，他说他有时跟孩子讲农村有些地方孩子吃不饱穿不暖，他儿子是不信的。我走访的大多数家庭没有到吃不上饭、穿不上衣服的地步，但衣服鞋子都很破旧，家里平时多以洋芋为主食，想必一般人还是想象不到的。这里我不过多谈贫困的问题了，政府也确实作了不少工作。这个公益组织主要是助学，不是扶贫。但是孩子，还是需要我们给他们一个起码的教育平台。也许他们高中或大学毕业了，仍然不见得有多光明的未来，但是起码能提高大多数人的人文、科学知识。这里我不想提各种高大上的说法了，能作一点，就作一点，能影响一点，就影响一点。</p>
+<p>祝福那里的支教老师和孩子们！  </p>
+]]></content>
     
     <summary type="html">
     
@@ -70,160 +163,160 @@
     <published>2016-08-21T02:23:08.000Z</published>
     <updated>2016-12-25T14:05:41.000Z</updated>
     
-    <content type="html">&lt;p&gt;本人有二十本左右纸质图书，现打算免费送出，有需要的人发邮件给我。大部分是在亚马逊上购买的，其中也有全英文版本的。  &lt;/p&gt;
-&lt;p&gt;这些书有些我看过了，有些没看完，但是现在我基本上已经习惯ipad上看书了，所以不想再保存这些纸质的书。想过捐出去，但是涉及到很多问题，比如捐书地方不多，多半都是针对小学和中学，但我这些书大部分是计算机和数学，只适合大学以上的同学阅读。另外总感觉这些收集捐赠书籍的地方，不见得能够把书送到需要的人手中。基于这些考虑，我决定把这些书免费送出去。&lt;/p&gt;
-&lt;p&gt;书是免费的，邮费的话，原则上我就不倒贴了，如果在武汉，可以联系直接来取。其他需要邮寄的，邮费将选择到付。所以，一本书本来就不贵，然后也是 &lt;strong&gt;“二手”&lt;/strong&gt; 的，可能你也觉得不值，还不如买新版免邮对吧。我的建议是可以直接选择几本。我这些书大部分应该都是正版，不过即使是在亚马逊购买，有一两本中文书籍，可能也是盗版。&lt;/p&gt;
-&lt;p&gt;关于书中我标记的文字问题，有的只是书前面写了自己的名字，或者一段话。有的书中偶尔有一些标记的文字。但是都很少。这也是教训，以后没必要把自己名字也在书上，不过我应该会很少买纸质的了。&lt;/p&gt;
-&lt;p&gt;数量不多，先到先得。现将书目、定价、书封面照片列如下：（删除线的已送出)&lt;/p&gt;
-&lt;h2 id=&quot;英文工具书&quot;&gt;&lt;a href=&quot;#英文工具书&quot; class=&quot;headerlink&quot; title=&quot;英文工具书&quot;&gt;&lt;/a&gt;英文工具书&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;Collins Cobuild Advanced Dictionary&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;英文&lt;br&gt;正版引进英文书籍&lt;br&gt;定价: 220元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0401.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0401.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Webster’s New Vocabulary Skill Builder&lt;blockquote&gt;
-&lt;p&gt;英文&lt;br&gt;定价: 64.7元&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0368.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0368.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;h2 id=&quot;数学&quot;&gt;&lt;a href=&quot;#数学&quot; class=&quot;headerlink&quot; title=&quot;数学&quot;&gt;&lt;/a&gt;数学&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;微机分和数学分析引论 第1卷 (Introduction to Calculus and Analysis I)&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Richard Courant and Fritz John (Springer)&lt;br&gt;英文&lt;br&gt;定价: 79.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0388.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0388.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;具体数学 - 计算机科学基础 英文第2版 (Concrete Mathematics - a Foundation For Computer Science)&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Graham, Knuth, Patashnik&lt;br&gt;英文&lt;br&gt;定价: 49.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0391.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0391.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;数学分析原理 英文第3版 (Principles of Mathematical Analysis Third Edition)&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Walter Rudin&lt;br&gt;英文&lt;br&gt;定价: 35.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0385.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0385.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;普林斯顿数学指南 第三卷&lt;blockquote&gt;
-&lt;p&gt;作者: Timothy Gowers&lt;br&gt;中文&lt;br&gt;定价: 138.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0403.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0403.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;数学及其历史 (Mathematics and Its History)&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: John StillWell&lt;br&gt;译者: 袁向东 冯绪宁&lt;br&gt;中文&lt;br&gt;定价: 69.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0397.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0397.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;古今数学思想 第一冊&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Morris Kline&lt;br&gt;译者: 张理京、张锦炎、江泽涵&lt;br&gt;中文&lt;br&gt;定价: 32.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0393.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0393.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;什么是数学 - 对思想和方法的基本研究（What is Mathematics)&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Richard Courant,  Herbert Robbins&lt;br&gt;译者: 左平 张饴慈&lt;br&gt;中文&lt;br&gt;定价: 43.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0387.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0387.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;数学概观&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: L. 戈丁&lt;br&gt;译者: 胡作玄&lt;br&gt;中文&lt;br&gt;定价: 28.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0394.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0394.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;h2 id=&quot;计算机&quot;&gt;&lt;a href=&quot;#计算机&quot; class=&quot;headerlink&quot; title=&quot;计算机&quot;&gt;&lt;/a&gt;计算机&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;编程原本 （Elements of Programming)&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Alexander Stepanov, Paul McJones&lt;br&gt;译者: 裘宗燕&lt;br&gt;中文&lt;br&gt;定价: 59.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0380.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0380.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;FreeBSD操作系统设计与实现 (The Design and Implementation of the FreeBSD Operating System)&lt;blockquote&gt;
-&lt;p&gt;作者: Marshall Kirk McKusick, George V. Neville-Neil&lt;br&gt;英文&lt;br&gt;定价: 68.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0379.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0379.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;研究之美&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: D.E. Knuth&lt;br&gt;译者: 高博&lt;br&gt;中文&lt;br&gt;定价: 49.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0371.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0371.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;黑客与画家 (Hackers and Painters)&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Paul Graham&lt;br&gt;译者: 阮一峰&lt;br&gt;中文&lt;br&gt;定价: 49.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0377.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0377.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;渗透测试实践指南 - 必知必会的工具与方法&lt;blockquote&gt;
-&lt;p&gt;作者: Patrick Engebretson&lt;br&gt;译者: 缪纶等&lt;br&gt;中文&lt;br&gt;定价: 49.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0374.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0374.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;极致之美(中国国家地理)&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;精装本&lt;br&gt;定价: 238.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0355.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0355.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;本杰明.富兰克林自传&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: 本杰明.富兰克林&lt;br&gt;中英对照&lt;br&gt;定价: 16.80元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0361.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0361.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;从0到1&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Peter Thiel&lt;br&gt;译者: 高玉芳&lt;br&gt;中文&lt;br&gt;定价: 45.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0362.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0362.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;世界会抛弃你吗 - 和不安的自己聊聊未来的路&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Tamar Chansky&lt;br&gt;译者: 吴书榆&lt;br&gt;中文&lt;br&gt;定价: 29.80元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0365.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0365.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;Pool and Billiards&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: Robert Byrne&lt;br&gt;英文&lt;br&gt;定价: 22$  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0357.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0357.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;经济学 第18版&lt;/del&gt; &lt;em&gt;已送&lt;/em&gt;&lt;blockquote&gt;
-&lt;p&gt;作者: 保罗.萨缪尔森， 威廉.诺德豪斯&lt;br&gt;译者: 萧琛，蒋景嫒&lt;br&gt;双语典藏本&lt;br&gt;定价: 128.00元  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;figure right nocaption&quot; style=&quot;width:300px;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/2016/08/21/share-books/IMG_0382.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;&quot;&gt;&lt;img class=&quot;fig-img&quot; src=&quot;/2016/08/21/share-books/IMG_0382.jpg&quot; style=&quot;width:300px;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
-&lt;p&gt;有需要的可以发Email给我，写清楚你想要的书名，邮寄地址。Email：bigscorpions@gmail.com. 博客&lt;strong&gt;About&lt;/strong&gt;里也有。&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>本人有二十本左右纸质图书，现打算免费送出，有需要的人发邮件给我。大部分是在亚马逊上购买的，其中也有全英文版本的。  </p>
+<p>这些书有些我看过了，有些没看完，但是现在我基本上已经习惯ipad上看书了，所以不想再保存这些纸质的书。想过捐出去，但是涉及到很多问题，比如捐书地方不多，多半都是针对小学和中学，但我这些书大部分是计算机和数学，只适合大学以上的同学阅读。另外总感觉这些收集捐赠书籍的地方，不见得能够把书送到需要的人手中。基于这些考虑，我决定把这些书免费送出去。</p>
+<p>书是免费的，邮费的话，原则上我就不倒贴了，如果在武汉，可以联系直接来取。其他需要邮寄的，邮费将选择到付。所以，一本书本来就不贵，然后也是 <strong>“二手”</strong> 的，可能你也觉得不值，还不如买新版免邮对吧。我的建议是可以直接选择几本。我这些书大部分应该都是正版，不过即使是在亚马逊购买，有一两本中文书籍，可能也是盗版。</p>
+<p>关于书中我标记的文字问题，有的只是书前面写了自己的名字，或者一段话。有的书中偶尔有一些标记的文字。但是都很少。这也是教训，以后没必要把自己名字也在书上，不过我应该会很少买纸质的了。</p>
+<p>数量不多，先到先得。现将书目、定价、书封面照片列如下：（删除线的已送出)</p>
+<h2 id="英文工具书"><a href="#英文工具书" class="headerlink" title="英文工具书"></a>英文工具书</h2><ul>
+<li><del>Collins Cobuild Advanced Dictionary</del> <em>已送</em><blockquote>
+<p>英文<br>正版引进英文书籍<br>定价: 220元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0401.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0401.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li>Webster’s New Vocabulary Skill Builder<blockquote>
+<p>英文<br>定价: 64.7元</p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0368.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0368.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<h2 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h2><ul>
+<li><del>微机分和数学分析引论 第1卷 (Introduction to Calculus and Analysis I)</del> <em>已送</em><blockquote>
+<p>作者: Richard Courant and Fritz John (Springer)<br>英文<br>定价: 79.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0388.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0388.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>具体数学 - 计算机科学基础 英文第2版 (Concrete Mathematics - a Foundation For Computer Science)</del> <em>已送</em><blockquote>
+<p>作者: Graham, Knuth, Patashnik<br>英文<br>定价: 49.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0391.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0391.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>数学分析原理 英文第3版 (Principles of Mathematical Analysis Third Edition)</del> <em>已送</em><blockquote>
+<p>作者: Walter Rudin<br>英文<br>定价: 35.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0385.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0385.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li>普林斯顿数学指南 第三卷<blockquote>
+<p>作者: Timothy Gowers<br>中文<br>定价: 138.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0403.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0403.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>数学及其历史 (Mathematics and Its History)</del> <em>已送</em><blockquote>
+<p>作者: John StillWell<br>译者: 袁向东 冯绪宁<br>中文<br>定价: 69.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0397.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0397.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>古今数学思想 第一冊</del> <em>已送</em><blockquote>
+<p>作者: Morris Kline<br>译者: 张理京、张锦炎、江泽涵<br>中文<br>定价: 32.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0393.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0393.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>什么是数学 - 对思想和方法的基本研究（What is Mathematics)</del> <em>已送</em><blockquote>
+<p>作者: Richard Courant,  Herbert Robbins<br>译者: 左平 张饴慈<br>中文<br>定价: 43.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0387.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0387.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>数学概观</del> <em>已送</em><blockquote>
+<p>作者: L. 戈丁<br>译者: 胡作玄<br>中文<br>定价: 28.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0394.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0394.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<h2 id="计算机"><a href="#计算机" class="headerlink" title="计算机"></a>计算机</h2><ul>
+<li><del>编程原本 （Elements of Programming)</del> <em>已送</em><blockquote>
+<p>作者: Alexander Stepanov, Paul McJones<br>译者: 裘宗燕<br>中文<br>定价: 59.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0380.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0380.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li>FreeBSD操作系统设计与实现 (The Design and Implementation of the FreeBSD Operating System)<blockquote>
+<p>作者: Marshall Kirk McKusick, George V. Neville-Neil<br>英文<br>定价: 68.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0379.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0379.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>研究之美</del> <em>已送</em><blockquote>
+<p>作者: D.E. Knuth<br>译者: 高博<br>中文<br>定价: 49.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0371.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0371.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>黑客与画家 (Hackers and Painters)</del> <em>已送</em><blockquote>
+<p>作者: Paul Graham<br>译者: 阮一峰<br>中文<br>定价: 49.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0377.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0377.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li>渗透测试实践指南 - 必知必会的工具与方法<blockquote>
+<p>作者: Patrick Engebretson<br>译者: 缪纶等<br>中文<br>定价: 49.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0374.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0374.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li><del>极致之美(中国国家地理)</del> <em>已送</em><blockquote>
+<p>精装本<br>定价: 238.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0355.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0355.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>本杰明.富兰克林自传</del> <em>已送</em><blockquote>
+<p>作者: 本杰明.富兰克林<br>中英对照<br>定价: 16.80元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0361.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0361.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>从0到1</del> <em>已送</em><blockquote>
+<p>作者: Peter Thiel<br>译者: 高玉芳<br>中文<br>定价: 45.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0362.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0362.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>世界会抛弃你吗 - 和不安的自己聊聊未来的路</del> <em>已送</em><blockquote>
+<p>作者: Tamar Chansky<br>译者: 吴书榆<br>中文<br>定价: 29.80元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0365.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0365.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>Pool and Billiards</del> <em>已送</em><blockquote>
+<p>作者: Robert Byrne<br>英文<br>定价: 22$  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0357.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0357.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<ul>
+<li><del>经济学 第18版</del> <em>已送</em><blockquote>
+<p>作者: 保罗.萨缪尔森， 威廉.诺德豪斯<br>译者: 萧琛，蒋景嫒<br>双语典藏本<br>定价: 128.00元  </p>
+</blockquote>
+</li>
+</ul>
+<div class="figure right nocaption" style="width:300px;"><a class="fancybox" href="/2016/08/21/share-books/IMG_0382.jpg" title="" data-fancybox-group=""><img class="fig-img" src="/2016/08/21/share-books/IMG_0382.jpg" style="width:300px;" alt=""></a></div><div style="clear:both;"></div>
+<p>有需要的可以发Email给我，写清楚你想要的书名，邮寄地址。Email：bigscorpions@gmail.com. 博客<strong>About</strong>里也有。</p>
+]]></content>
     
     <summary type="html">
     
@@ -242,21 +335,21 @@
     <link href="http://bigscorpions.github.io/2016/06/18/closure/"/>
     <id>http://bigscorpions.github.io/2016/06/18/closure/</id>
     <published>2016-06-18T04:50:50.000Z</published>
-    <updated>2016-06-18T05:46:48.000Z</updated>
+    <updated>2017-03-25T13:38:21.000Z</updated>
     
-    <content type="html">&lt;p&gt;在很多支持函数式语言编程特性的语言中出现了&lt;a href=&quot;https://en.wikipedia.org/wiki/Closure_%28computer_programming%29&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;闭包&lt;/a&gt;这个概念。其实这个概念也是从函数式语言中来的，从scheme语言引入实现闭包，解决了lisp动态作用于（dynamic scope)之后，很多函数式语言都引入了类似的特性。&lt;br&gt;在函数作为first-class and hight-order class时,多数都对闭包做了实现,比如python,ruby,c#等。java最新的版本1.8似乎也支持了。c++ 11也开始支持了闭包。&lt;/p&gt;
-&lt;p&gt;对于闭包的理解，我觉得Common Lisp中的解释还是比较准确和易于理解的，直接引用过来：&lt;/p&gt;
-&lt;h2 id=&quot;闭包-Closures&quot;&gt;&lt;a href=&quot;#闭包-Closures&quot; class=&quot;headerlink&quot; title=&quot;闭包 (Closures)&quot;&gt;&lt;/a&gt;闭包 (Closures)&lt;/h2&gt;&lt;p&gt;函数可以如表达式的值，或是其它对象那样被返回。以下是接受一个实参，并依其类型返回特定的结合函数：&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; combiner (&lt;span class=&quot;name&quot;&gt;x&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;typecase&lt;/span&gt; x&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;number&lt;/span&gt; #&#39;+)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;list&lt;/span&gt; #&#39;append)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;t&lt;/span&gt; #&#39;list)))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;在这之上，我们可以创建一个通用的结合函数:&lt;br&gt;&lt;figure class=&quot;highlight scheme&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; combine (&lt;span class=&quot;name&quot;&gt;&amp;amp;rest&lt;/span&gt; args)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;apply&lt;/span&gt;&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;combiner&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;car&lt;/span&gt;&lt;/span&gt; args))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        args))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;它接受任何类型的参数，并以适合它们类型的方式结合。（为了简化这个例子，我们假定所有的实参，都有着一样的类型。）&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;combine&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;combine&lt;/span&gt; &#39;(a b) &#39;(c d))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;A&lt;/span&gt; B C D)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;词法变量（lexical variables）只在被定义的上下文内有效。伴随这个限制而来的是，只要那个上下文还有在使用，它们就保证会是有效的。如果函数在词法变量的作用域里被定义时，函数仍可引用到那个变量，即便函数被作为一个值返回了，返回至词法变量被创建的上下文之外。下面我们创建了一个把实参加上 3 的函数：&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; fn (&lt;span class=&quot;name&quot;&gt;let&lt;/span&gt; ((&lt;span class=&quot;name&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            #&#39;(lambda (x) (+ x i))))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#&amp;lt;Interpreted-Function C0A51E&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;funcall&lt;/span&gt; fn &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;当函数引用到外部定义的变量时，这外部定义的变量称为自由变量（free variable）。函数引用到自由的词法变量时，称之为闭包（closure）。 [2] 只要函数还存在，变量就必须一起存在。闭包结合了函数与环境（environment）；无论何时，当一个函数引用到周围词法环境的某个东西时，闭包就被隐式地创建出来了。这悄悄地发生在像是下面这个函数，是一样的概念:&lt;br&gt;&lt;figure class=&quot;highlight clojure&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; add-to-list (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;num&lt;/span&gt;&lt;/span&gt; lst)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;mapcar&lt;/span&gt; #&#39;(&lt;span class=&quot;name&quot;&gt;lambda&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;x&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;+&lt;/span&gt;&lt;/span&gt; x num))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          lst))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;这函数接受一个数字及列表，并返回一个列表，列表元素是元素与传入数字的和。在 lambda 表达式里的变量 num 是自由的，所以像是这样的情况，我们传递了一个闭包给 mapcar 。&lt;br&gt;一个更显着的例子会是函数在被调用时，每次都返回不同的闭包。下面这个函数返回一个加法器（adder）:&lt;br&gt;&lt;figure class=&quot;highlight clojure&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; make-adder (&lt;span class=&quot;name&quot;&gt;n&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #&#39;(&lt;span class=&quot;name&quot;&gt;lambda&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;x&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;+&lt;/span&gt;&lt;/span&gt; x n)))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;它接受一个数字，并返回一个将该数字与其参数相加的闭包（函数）。&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; add3 (&lt;span class=&quot;name&quot;&gt;make-adder&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#&amp;lt;Interpreted-Function COEBF6&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;funcall&lt;/span&gt; add3 &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; add27 (&lt;span class=&quot;name&quot;&gt;make-adder&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;27&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#&amp;lt;Interpreted-Function C0EE4E&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;funcall&lt;/span&gt; add27 &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;29&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;我们可以产生共享变量的数个闭包。下面我们定义共享一个计数器的两个函数:&lt;br&gt;&lt;figure class=&quot;highlight clojure&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;let&lt;/span&gt;&lt;/span&gt; ((&lt;span class=&quot;name&quot;&gt;counter&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; reset ()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; counter &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; stamp ()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;setf&lt;/span&gt; counter (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;+&lt;/span&gt;&lt;/span&gt; counter &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;))))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;这样的一对函数或许可以用来创建时间戳章（time-stamps）。每次我们调用 stamp 时，我们获得一个比之前高的数字，而调用 reset 我们可以将计数器归零:&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;list&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;stamp&lt;/span&gt;) (&lt;span class=&quot;name&quot;&gt;stamp&lt;/span&gt;) (&lt;span class=&quot;name&quot;&gt;reset&lt;/span&gt;) (&lt;span class=&quot;name&quot;&gt;stamp&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;你可以使用全局计数器来做到同样的事情，但这样子使用计数器，可以保护计数器被非预期的引用。Common Lisp 有一个内置的函数 complement 函数，接受一个谓词，并返回谓词的补数（complement）。比如：&lt;br&gt;&lt;figure class=&quot;highlight lisp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; (&lt;span class=&quot;name&quot;&gt;mapcar&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;complement&lt;/span&gt; #&#39;oddp)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &#39;(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;NIL&lt;/span&gt; T NIL T NIL T)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;有了闭包以后，很容易就可以写出这样的函数：&lt;br&gt;&lt;figure class=&quot;highlight clojure&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;defun&lt;/span&gt; our-complement (&lt;span class=&quot;name&quot;&gt;f&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #&#39;(&lt;span class=&quot;name&quot;&gt;lambda&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;&amp;amp;rest&lt;/span&gt; args)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;not&lt;/span&gt;&lt;/span&gt; (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;apply&lt;/span&gt;&lt;/span&gt; f args))))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>在很多支持函数式语言编程特性的语言中出现了<a href="https://en.wikipedia.org/wiki/Closure_%28computer_programming%29" target="_blank" rel="external">闭包</a>这个概念。其实这个概念也是从函数式语言中来的，从scheme语言引入实现闭包，解决了lisp动态作用于（dynamic scope)之后，很多函数式语言都引入了类似的特性。<br>在函数作为first-class and hight-order class时,多数都对闭包做了实现,比如python,ruby,c#等。java最新的版本1.8似乎也支持了。c++ 11也开始支持了闭包。</p>
+<p>对于闭包的理解，我觉得Common Lisp中的解释还是比较准确和易于理解的，直接引用过来：</p>
+<h2 id="闭包-Closures"><a href="#闭包-Closures" class="headerlink" title="闭包 (Closures)"></a>闭包 (Closures)</h2><p>函数可以如表达式的值，或是其它对象那样被返回。以下是接受一个实参，并依其类型返回特定的结合函数：<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(<span class="name">defun</span> combiner (<span class="name">x</span>)</div><div class="line">  (<span class="name">typecase</span> x</div><div class="line">    (<span class="name">number</span> #'+)</div><div class="line">    (<span class="name">list</span> #'append)</div><div class="line">    (<span class="name">t</span> #'list)))</div></pre></td></tr></table></figure><br>在这之上，我们可以创建一个通用的结合函数:<br><figure class="highlight hy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="name">defun</span> combine (<span class="name">&amp;rest</span> args)</div><div class="line">  (<span class="name"><span class="builtin-name">apply</span></span> (<span class="name">combiner</span> (<span class="name"><span class="builtin-name">car</span></span> args))</div><div class="line">        args))</div></pre></td></tr></table></figure></p>
+<p>它接受任何类型的参数，并以适合它们类型的方式结合。（为了简化这个例子，我们假定所有的实参，都有着一样的类型。）<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt; (<span class="name">combine</span> <span class="number">2</span> <span class="number">3</span>)</div><div class="line"><span class="number">5</span></div><div class="line">&gt; (<span class="name">combine</span> '(a b) '(c d))</div><div class="line">(<span class="name">A</span> B C D)</div></pre></td></tr></table></figure></p>
+<p>词法变量（lexical variables）只在被定义的上下文内有效。伴随这个限制而来的是，只要那个上下文还有在使用，它们就保证会是有效的。如果函数在词法变量的作用域里被定义时，函数仍可引用到那个变量，即便函数被作为一个值返回了，返回至词法变量被创建的上下文之外。下面我们创建了一个把实参加上 3 的函数：<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt; (<span class="name">setf</span> fn (<span class="name">let</span> ((<span class="name">i</span> <span class="number">3</span>))</div><div class="line">            #'(lambda (x) (+ x i))))</div><div class="line">#&lt;Interpreted-Function C0A51E&gt;</div><div class="line">&gt; (<span class="name">funcall</span> fn <span class="number">2</span>)</div><div class="line"><span class="number">5</span></div></pre></td></tr></table></figure></p>
+<p>当函数引用到外部定义的变量时，这外部定义的变量称为自由变量（free variable）。函数引用到自由的词法变量时，称之为闭包（closure）。 [2] 只要函数还存在，变量就必须一起存在。闭包结合了函数与环境（environment）；无论何时，当一个函数引用到周围词法环境的某个东西时，闭包就被隐式地创建出来了。这悄悄地发生在像是下面这个函数，是一样的概念:<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(<span class="name">defun</span> add-to-list (<span class="name"><span class="builtin-name">num</span></span> lst)</div><div class="line">  (<span class="name">mapcar</span> #'(<span class="name">lambda</span> (<span class="name">x</span>)</div><div class="line">              (<span class="name"><span class="builtin-name">+</span></span> x num))</div><div class="line">          lst))</div></pre></td></tr></table></figure></p>
+<p>这函数接受一个数字及列表，并返回一个列表，列表元素是元素与传入数字的和。在 lambda 表达式里的变量 num 是自由的，所以像是这样的情况，我们传递了一个闭包给 mapcar 。<br>一个更显着的例子会是函数在被调用时，每次都返回不同的闭包。下面这个函数返回一个加法器（adder）:<br><figure class="highlight hy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="name">defun</span> make-adder (<span class="name">n</span>)</div><div class="line">  #'(<span class="name"><span class="builtin-name">lambda</span></span> (<span class="name">x</span>)</div><div class="line">      (<span class="name"><span class="builtin-name">+</span></span> x n)))</div></pre></td></tr></table></figure></p>
+<p>它接受一个数字，并返回一个将该数字与其参数相加的闭包（函数）。<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt; (<span class="name">setf</span> add3 (<span class="name">make-adder</span> <span class="number">3</span>))</div><div class="line">#&lt;Interpreted-Function COEBF6&gt;</div><div class="line">&gt; (<span class="name">funcall</span> add3 <span class="number">2</span>)</div><div class="line"><span class="number">5</span></div><div class="line">&gt; (<span class="name">setf</span> add27 (<span class="name">make-adder</span> <span class="number">27</span>))</div><div class="line">#&lt;Interpreted-Function C0EE4E&gt;</div><div class="line">&gt; (<span class="name">funcall</span> add27 <span class="number">2</span>)</div><div class="line"><span class="number">29</span></div></pre></td></tr></table></figure></p>
+<p>我们可以产生共享变量的数个闭包。下面我们定义共享一个计数器的两个函数:<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(<span class="name"><span class="builtin-name">let</span></span> ((<span class="name">counter</span> <span class="number">0</span>))</div><div class="line">  (<span class="name">defun</span> reset ()</div><div class="line">    (<span class="name">setf</span> counter <span class="number">0</span>))</div><div class="line">  (<span class="name">defun</span> stamp ()</div><div class="line">    (<span class="name">setf</span> counter (<span class="name"><span class="builtin-name">+</span></span> counter <span class="number">1</span>))))</div></pre></td></tr></table></figure></p>
+<p>这样的一对函数或许可以用来创建时间戳章（time-stamps）。每次我们调用 stamp 时，我们获得一个比之前高的数字，而调用 reset 我们可以将计数器归零:<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; (<span class="name">list</span> (<span class="name">stamp</span>) (<span class="name">stamp</span>) (<span class="name">reset</span>) (<span class="name">stamp</span>))</div><div class="line">(<span class="number">1</span> <span class="number">2</span> <span class="number">0</span> <span class="number">1</span>)</div></pre></td></tr></table></figure></p>
+<p>你可以使用全局计数器来做到同样的事情，但这样子使用计数器，可以保护计数器被非预期的引用。Common Lisp 有一个内置的函数 complement 函数，接受一个谓词，并返回谓词的补数（complement）。比如：<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt; (<span class="name">mapcar</span> (<span class="name">complement</span> #'oddp)</div><div class="line">          '(<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span>))</div><div class="line">(<span class="name">NIL</span> T NIL T NIL T)</div></pre></td></tr></table></figure></p>
+<p>有了闭包以后，很容易就可以写出这样的函数：<br><figure class="highlight hy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="name">defun</span> our-complement (<span class="name">f</span>)</div><div class="line">  #'(<span class="name"><span class="builtin-name">lambda</span></span> (<span class="name">&amp;rest</span> args)</div><div class="line">      (<span class="name"><span class="builtin-name">not</span></span> (<span class="name"><span class="builtin-name">apply</span></span> f args))))</div></pre></td></tr></table></figure></p>
+]]></content>
     
     <summary type="html">
     
@@ -278,23 +371,23 @@
     <published>2016-06-18T04:45:38.000Z</published>
     <updated>2016-06-18T04:49:31.000Z</updated>
     
-    <content type="html">&lt;p&gt;对于需要任务管理的人来说，笔记本已经无法满足我们的现代化工作模式的需要了。我们需要记录个人的工作事项，日程安排，进度追踪，小组讨论，文档共享，任务指派。我们甚至可能还需要项目进度的统计和报表数据。现在的任务管理工具或系统很多，多到让你不知如何选择，随便google一下，会有很多‘最好用的’和’前十个’之类的答案。但是你还是得自己试用一下，选择最适合你或者你的团队和公司所需要的那款。&lt;/p&gt;
-&lt;p&gt;我查询了一些答案，试用了一些系统和工具，可以说特点各不相同，但给我的感觉是有很多好的工具不分伯仲，都可以满足你的大部分需求，可能需要根据你自己的品味来选择。但这些真的无关紧要，能帮助你提升你的工作效率才是最重要的。以下是我觉得比较好用的几个系统或工具:&lt;/p&gt;
-&lt;h2 id=&quot;免费-但支持收费购买更多的服务&quot;&gt;&lt;a href=&quot;#免费-但支持收费购买更多的服务&quot; class=&quot;headerlink&quot; title=&quot;免费(但支持收费购买更多的服务)&quot;&gt;&lt;/a&gt;免费(但支持收费购买更多的服务)&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Todoist: 跟它的名字一样，这是一个很适合个人事项安排的软件。简单易用，但是能满足基本需求。如果你觉得手机或者电脑自带的‘日程表’不够用，又不想用一个很复杂的系统管理你的日常工作安排，这款软件会很适合你。Todoist支持Web、手机和桌面应用，基本涵盖你的工作环境了吧。我用了这款软件差不多一年了，后来甚至购买了收费版本，主要是管理个人的短期的事项。&lt;/li&gt;
-&lt;li&gt;Asana: 个人或团队的任务管理系统。适合需要对项目进行任务追踪管理、团队沟通、任务指派，支持上传文档。我最喜欢用的任务管理工具，虽然不是我用的第一个任务管理系统。界面干净，侧重点明确，我最喜欢的一点是，它支持不断的额增加子任务（没测试最深的层级）。当你遇到一个复杂的任务，需要分部完成，建立子任务就非常必要，因为任务比简单的描述所拥有的属性更多，你可以关闭一个任务，添加任务描述和评论等，但简单的文字描述的todolist显然是没有这种功能的。免费版本支持15个团队成员，不支持任务优先级设置。Asana支持Web和手机。我基本上用它来管理我的个人或工作的一些项目。&lt;/li&gt;
-&lt;li&gt;Trello: Trello是我试用的第一个任务管理系统，也是因为界面看上去比较整洁，另外觉得它的卡片式的界面风格比较吸引人。它采用卡片管理项目或者任务，支持添加Todolist，评论，上传文档，建立子任务。Trello支持Web和手机，有免费的版本和收费的版本。我现在基本转到Asana上了，但说不定你喜欢，很多人对它的评价也不错。&lt;/li&gt;
-&lt;li&gt;Stanteam: Stanteam也是一个功能全的任务管理软件，有免费和收费版。但是我基本上试用了一下就没在使用了，感觉它的界面不是很直观，不够整洁。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;收费&quot;&gt;&lt;a href=&quot;#收费&quot; class=&quot;headerlink&quot; title=&quot;收费&quot;&gt;&lt;/a&gt;收费&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Atlanssian: 收费的任务管理系统就不得不提Atlanssian了。这家澳大利亚的公司开发了一系列比较好用的系统，比如Jira和Conflunce.从项目管理、bug管理、需求管理等。功能很强大，从它的客户你就能知道这一点。非常适合企业应用。&lt;/li&gt;
-&lt;li&gt;Kanban: 也是不错的任务管理系统，网上评价不错，但本人没试用过，不做过多评论了。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Redmine是一个开源的bug管理系统，Ruby开发，支持很多插件，可以基于它搭建和开发适合企业的任务管理系统。&lt;/li&gt;
-&lt;li&gt;Slack: 是的，没错，这个团队协作沟通的软件，有人用它来做团队的任务管理。如果你IRC，对这个应该会比较习惯的。我其实很习惯他的界面和功能，但是我没有团队，所以，基本试用过就没怎么用了，除了跟一些建立Slack的Community聊天的时候用。&lt;/li&gt;
-&lt;/ul&gt;
-</content>
+    <content type="html"><![CDATA[<p>对于需要任务管理的人来说，笔记本已经无法满足我们的现代化工作模式的需要了。我们需要记录个人的工作事项，日程安排，进度追踪，小组讨论，文档共享，任务指派。我们甚至可能还需要项目进度的统计和报表数据。现在的任务管理工具或系统很多，多到让你不知如何选择，随便google一下，会有很多‘最好用的’和’前十个’之类的答案。但是你还是得自己试用一下，选择最适合你或者你的团队和公司所需要的那款。</p>
+<p>我查询了一些答案，试用了一些系统和工具，可以说特点各不相同，但给我的感觉是有很多好的工具不分伯仲，都可以满足你的大部分需求，可能需要根据你自己的品味来选择。但这些真的无关紧要，能帮助你提升你的工作效率才是最重要的。以下是我觉得比较好用的几个系统或工具:</p>
+<h2 id="免费-但支持收费购买更多的服务"><a href="#免费-但支持收费购买更多的服务" class="headerlink" title="免费(但支持收费购买更多的服务)"></a>免费(但支持收费购买更多的服务)</h2><ul>
+<li>Todoist: 跟它的名字一样，这是一个很适合个人事项安排的软件。简单易用，但是能满足基本需求。如果你觉得手机或者电脑自带的‘日程表’不够用，又不想用一个很复杂的系统管理你的日常工作安排，这款软件会很适合你。Todoist支持Web、手机和桌面应用，基本涵盖你的工作环境了吧。我用了这款软件差不多一年了，后来甚至购买了收费版本，主要是管理个人的短期的事项。</li>
+<li>Asana: 个人或团队的任务管理系统。适合需要对项目进行任务追踪管理、团队沟通、任务指派，支持上传文档。我最喜欢用的任务管理工具，虽然不是我用的第一个任务管理系统。界面干净，侧重点明确，我最喜欢的一点是，它支持不断的额增加子任务（没测试最深的层级）。当你遇到一个复杂的任务，需要分部完成，建立子任务就非常必要，因为任务比简单的描述所拥有的属性更多，你可以关闭一个任务，添加任务描述和评论等，但简单的文字描述的todolist显然是没有这种功能的。免费版本支持15个团队成员，不支持任务优先级设置。Asana支持Web和手机。我基本上用它来管理我的个人或工作的一些项目。</li>
+<li>Trello: Trello是我试用的第一个任务管理系统，也是因为界面看上去比较整洁，另外觉得它的卡片式的界面风格比较吸引人。它采用卡片管理项目或者任务，支持添加Todolist，评论，上传文档，建立子任务。Trello支持Web和手机，有免费的版本和收费的版本。我现在基本转到Asana上了，但说不定你喜欢，很多人对它的评价也不错。</li>
+<li>Stanteam: Stanteam也是一个功能全的任务管理软件，有免费和收费版。但是我基本上试用了一下就没在使用了，感觉它的界面不是很直观，不够整洁。</li>
+</ul>
+<h2 id="收费"><a href="#收费" class="headerlink" title="收费"></a>收费</h2><ul>
+<li>Atlanssian: 收费的任务管理系统就不得不提Atlanssian了。这家澳大利亚的公司开发了一系列比较好用的系统，比如Jira和Conflunce.从项目管理、bug管理、需求管理等。功能很强大，从它的客户你就能知道这一点。非常适合企业应用。</li>
+<li>Kanban: 也是不错的任务管理系统，网上评价不错，但本人没试用过，不做过多评论了。</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li>Redmine是一个开源的bug管理系统，Ruby开发，支持很多插件，可以基于它搭建和开发适合企业的任务管理系统。</li>
+<li>Slack: 是的，没错，这个团队协作沟通的软件，有人用它来做团队的任务管理。如果你IRC，对这个应该会比较习惯的。我其实很习惯他的界面和功能，但是我没有团队，所以，基本试用过就没怎么用了，除了跟一些建立Slack的Community聊天的时候用。</li>
+</ul>
+]]></content>
     
     <summary type="html">
     
@@ -314,14 +407,14 @@
     <published>2016-06-18T04:40:27.000Z</published>
     <updated>2016-06-18T04:45:01.000Z</updated>
     
-    <content type="html">&lt;p&gt;Macbook pro安装了除了osx系统外，又安装了一个archlinux 系统。各占249G的分区。后osx的分区空间不足了，开始需要压缩archlinux的分区给osx. 但是跟osx相邻的分区为arch的主分区，不能压缩了。这样除了删掉arch的分区，没有办法。在osx里用disk utility删除arch分区，但是发现仍然无法于osx分区合并。可能是不应该用disk utility删除arch分区。最后解决方法不是很快速，但好在保证了原osx系统的完整性。&lt;br&gt;解决方法如下:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;利用Time Machine备份整个OS X系统.&lt;/li&gt;
-&lt;li&gt;重启电脑，按&lt;code&gt;command+r&lt;/code&gt;，进入OS X recover 系统，进入后利用Disk Utility 删除原osx分区。&lt;/li&gt;
-&lt;li&gt;Restore from Time Machine Backup. (第一次恢复，中间出错，重启后重新恢复，成功完成了恢复）.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;恢复后，osx系统基本还算完整，初步看，文件和应用都没有问题。当然，archlinux无法保住了，因为当时的分区不是很合理，应该把非arch的主分区跟osx分区相邻，这样就可以通过压缩该分区释放空间给osx.&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>Macbook pro安装了除了osx系统外，又安装了一个archlinux 系统。各占249G的分区。后osx的分区空间不足了，开始需要压缩archlinux的分区给osx. 但是跟osx相邻的分区为arch的主分区，不能压缩了。这样除了删掉arch的分区，没有办法。在osx里用disk utility删除arch分区，但是发现仍然无法于osx分区合并。可能是不应该用disk utility删除arch分区。最后解决方法不是很快速，但好在保证了原osx系统的完整性。<br>解决方法如下:</p>
+<ul>
+<li>利用Time Machine备份整个OS X系统.</li>
+<li>重启电脑，按<code>command+r</code>，进入OS X recover 系统，进入后利用Disk Utility 删除原osx分区。</li>
+<li>Restore from Time Machine Backup. (第一次恢复，中间出错，重启后重新恢复，成功完成了恢复）.</li>
+</ul>
+<p>恢复后，osx系统基本还算完整，初步看，文件和应用都没有问题。当然，archlinux无法保住了，因为当时的分区不是很合理，应该把非arch的主分区跟osx分区相邻，这样就可以通过压缩该分区释放空间给osx.</p>
+]]></content>
     
     <summary type="html">
     
